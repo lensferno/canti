@@ -1,0 +1,144 @@
+
+
+                if (md.mobile())
+                    return {
+                        device: md.os() === 'iOS' ? md.phone() : md.os(),
+                        platform: 'Smartphones/PDAs/Tablets'
+                    };
+                // Desktop
+
+                if (lo.includes('win') && lo.includes('95'))
+                    return {
+                        device: 'Windows 95',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win 9x') && lo.includes('4.90'))
+                    return {
+                        device: 'Windows ME',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('98'))
+                    return {
+                        device: 'Windows 98',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 5.0'))
+                    return {
+                        device: 'Windows 2000',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 5.1'))
+                    return {
+                        device: 'Windows XP',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 6.0'))
+                    return {
+                        device: 'Windows Vista',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 6.1'))
+                    return {
+                        device: 'Windows 7',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 6.2'))
+                    return {
+                        device: 'Windows 8',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 6.3'))
+                    return {
+                        device: 'Windows 8',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt 10.0'))
+                    return {
+                        device: 'Windows 10',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('32'))
+                    return {
+                        device: 'Windows 32',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('win') && lo.includes('nt'))
+                    return {
+                        device: 'Windows NT',
+                        platform: 'Windows'
+                    };
+                if (lo.includes('mac os'))
+                    return {
+                        device: 'Mac OS',
+                        platform: 'Macintosh'
+                    };
+                if (lo.includes('linux'))
+                    return {
+                        device: 'Linux',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('unix'))
+                    return {
+                        device: 'Unix',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('sun') && lo.includes('os'))
+                    return {
+                        device: 'SunOS',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('ibm') && lo.includes('os'))
+                    return {
+                        device: 'IBM OS/2',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('mac') && lo.includes('pc'))
+                    return {
+                        device: 'Macintosh',
+                        platform: 'Macintosh'
+                    };
+                if (lo.includes('powerpc'))
+                    return {
+                        device: 'PowerPC',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('aix'))
+                    return {
+                        device: 'AIX',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('hpux'))
+                    return {
+                        device: 'HPUX',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('netbsd'))
+                    return {
+                        device: 'NetBSD',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('bsd'))
+                    return {
+                        device: 'BSD',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('osf1'))
+                    return {
+                        device: 'OSF1',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('irix'))
+                    return {
+                        device: 'IRIX',
+                        platform: 'Linux'
+                    };
+                if (lo.includes('freebsd'))
+                    return {
+                        device: 'FreeBSD',
+                        platform: 'Linux'
+                    };
+                return {
+                    device: 'Windows NT',
+                    platform: 'Windows'
+                };
+            }
