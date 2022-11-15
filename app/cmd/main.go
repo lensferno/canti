@@ -1,13 +1,23 @@
 package main
 
 import (
-	"canti/app/codecs"
-	"fmt"
+	"github.com/urfave/cli/v2"
+	"log"
+	"os"
 )
 
 func main() {
-	a := "{6786578;l,78;l,67;8l,;l,5;67l,;98l,dfgsdfgsdfgsdfg}"
-	b := "3c6d08d667d0ee0ccad77c55b19d3e4ab2552f7163ec40a9389095a18f86c398"
+	cli.AppHelpTemplate = helpTemplate
 
-	fmt.Println(codecs.Encode(a, b))
+	app := &cli.App{
+		Flags:    globalFlags,
+		Commands: allCommands,
+		Version:  "0.0.1-dev",
+	}
+
+	err := app.Run(os.Args)
+	if err != nil {
+		log.Fatalln(err)
+		return
+	}
 }
