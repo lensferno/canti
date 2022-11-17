@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/kardianos/service"
+	"github.com/urfave/cli/v2"
 	"os"
 )
 
@@ -30,4 +31,25 @@ func install() {
 
 		return
 	}
+}
+
+func installService(ctx *cli.Context) error {
+
+	return nil
+}
+
+func uninstallService(ctx *cli.Context) error {
+	return nil
+}
+
+func login(ctx *cli.Context) error {
+	return nil
+}
+
+func logout(ctx *cli.Context) error {
+	return nil
+}
+
+func showStatus(ctx *cli.Context) error {
+	return nil
 }

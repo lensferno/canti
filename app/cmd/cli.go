@@ -1,7 +1,5 @@
 package main
 
-import "github.com/urfave/cli/v2"
-
 var helpTemplate = `
  ██████╗ █████╗ ███╗   ██╗████████╗██╗
 ██╔════╝██╔══██╗████╗  ██║╚══██╔══╝██║
@@ -36,23 +34,3 @@ https://github.com/lensferno/canti
 （详细的文档也在上面哦）
 如果有什么好的建议之类的请务必告诉我(。・∀・)ノ
 `
-
-func installService(ctx *cli.Context) error {
-	return nil
-}
-
-func uninstallService(ctx *cli.Context) error {
-	return nil
-}
-
-func login(ctx *cli.Context) error {
-	return nil
-}
-
-func logout(ctx *cli.Context) error {
-	return nil
-}
-
-func showStatus(ctx *cli.Context) error {
-	return nil
-}

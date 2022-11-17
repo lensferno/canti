@@ -1,0 +1,7 @@
+canti:
+  username: "202100000000"
+  password: "password12450"
+  method: "web"
+  max-retry-times: 3
+  keep-alive: false
+  reconnect: true
